@@ -1,4 +1,4 @@
-//ass the user for their marks
+//asks the user for their marks
 let x = prompt("What is your  marks?");
 //The statement to produce the required output if a certain condition is met.
 if (x<40){
