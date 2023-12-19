@@ -1,0 +1,1 @@
+This programme works by getting the speed of a car.It should output "OK" if the speed is less than 70.If the speed is greater than 70,this programme should output 1 point for every 5km/hr.If the points reach 12,the programme should output "License Suspended".
