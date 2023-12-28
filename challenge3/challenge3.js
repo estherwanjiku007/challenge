@@ -18,7 +18,7 @@ function calcNetSalary(basicSalary){
         else {
             console.log(payee=basicSalary*0.35);
         }
-        calcPayee(100000)
+        calcPayee()
     }
     //function to calculate the nhif deduction
         function calcNhifDed(basicSalary){
@@ -73,7 +73,7 @@ function calcNetSalary(basicSalary){
         else{
             console.log(nhifDed=1700);
         }
-        calcNhifDed(100000)
+        calcNhifDed()
     }
     //functuion to calculate the nssf deduction
     function calcNssfDed(pensionScheme,maxPensionablePay){
@@ -91,7 +91,7 @@ function calcNetSalary(basicSalary){
                 console.log(maxPensionablePay>6000 && maxPensionablePay<=18000)
             let maxContributions=maxPensionablePay*0.06
             }
-            calcNssfDed(2,16000)
+            calcNssfDed()
         }
         //function to calculate the Fringe benefit
         function calcFringeBenefit(month,loans){
@@ -112,11 +112,11 @@ function calcNetSalary(basicSalary){
                 let housingLevy=basicSalary*0.015
                console.log(housingLevy)
             }
-            calcHousingFund(100000)
+            calcHousingFund()
         
          let deductions=interest+nhifDed+payee+maxContributions+housingLevy;
          let netSalary=basicSalary-deductions;
          console.log(netSalary);
     }
     }
-        calcNetSalary(100000)
+        calcNetSalary()
