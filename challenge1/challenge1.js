@@ -1,4 +1,5 @@
-//ass the user for their marks
+//ststement to ask the user for their marks
+function myCalc(){
 let x = prompt("What is your  marks?");
 //The statement to produce the required output if a certain condition is met.
 if (x<40){
@@ -16,3 +17,5 @@ else if(x>=60 && x<=79){
 else{
     console.log("A");
 }
+}
+myCalc();
