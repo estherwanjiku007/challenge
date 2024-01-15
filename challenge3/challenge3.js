@@ -4,19 +4,24 @@ function calcNetSalary(basicSalary){
     function calcPayee(basicSalary){
         let payee=0;
         if(basicSalary<=24000){
-             return payee=basicSalary*0.1;
+              payee=basicSalary*0.1
+              return payee
         }
         else if(basicSalary>24000 && basicSalary<=32,333){
-            return payee=basicSalary*0.25;
+             payee=basicSalary*0.25;
+             return payee
         }
         else if(basicSalary>=32334 && basicSalary<=500000){
-            return payee=basicSalary*0.3;
+             payee=basicSalary*0.3;
+             return payee
         }
         else if(basicSalary>500000 && basicSalary<=800000){
-            return payee=basicSalary*0.325;
+             payee=basicSalary*0.325;
+             return payee
         }
         else {
-           return payee=basicSalary*0.35;
+            payee=basicSalary*0.35;
+            return payee
         }
         
     }
@@ -25,86 +30,99 @@ function calcNetSalary(basicSalary){
         function calcNhifDed(basicSalary){
         let nhifDed=0;
         if(basicSalary<=5999){
-           return nhifDed=150;
+            nhifDed=150
+            return nhifDed;
         }else if(basicSalary>5999 && basicSalary<=7999){
-            console.log(nhifDed=300);
+            nhifDed=300
+            return nhifDed;
         }
         else if(basicSalary>=8000 && basicSalary<=11999){
-            return nhifDed=400;
-        }
+            nhifDed=400
+            return nhifDed
+        } 
         else if(basicSalary>=12000 && basicSalary<=14999){
-            return nhifDed=500;
+             nhifDed=500
+             return nhifDed;
         }
         else if(basicSalary>=15000 && basicSalary<=19999){
-            return nhifDed=600;
+             nhifDed=600
+             return nhifDed
         }
         else if(basicSalary>=20000 && basicSalary<=24999){
             return nhifDed=750;
         }
         else if(basicSalary>=25000 && basicSalary<=29999){
-            return nhifDed=850;
+             nhifDed=850
+             return nhifDed
         }
         else if(basicSalary>=30000 && basicSalary<=34999){
-            return nhifDed=900;
+             nhifDed=900
+             return nhifDed
         }
         else if(basicSalary>=35000 && basicSalary<=3999){
-            return nhifDed=950;
+             nhifDed=950
+             return nhifDed
         }
         else if(basicSalary>=40000 && basiSalary<=44999){
-            return nhifDed=1000;
+             nhifDed=1000
+             return nhifDed
         }
         else if(basicSalary>=45000 && basicSalary<=49999){
-            return nhifDed=1100
+             nhifDed=1100
+             return nhifDed
         }
         else if(basicSalary>=50000 && basicSalary<=59999){
-            return nhifDed=1200
+             nhifDed=1200
+             return nhifDed
         }
         else if(basicSalary>=60000 && basicSalary<=69999){
-            return nhifDed=1300
+            nhifDed=1300
+            return netSalary
         }
         else if(basicSalary>=70000 && basicSalary<=79999){
-            return nhifDed=1400;
+             nhifDed=1400
+             return nhifDed
         }
         else if(basicSalary>=80000 && basicSalary<=89999){
-            return nhifDed=1500
+             nhifDed=1500
+             return nhifDed
         }
         else if(basicSalary>=90000 && basicSalary<=99999){
-           return nhifDed=1600;
+            nhifDed=1600
+            return nhifDed
         }
         else{
-           return nhifDed=1700;
+            nhifDed=1700
+            return nhifDed
         }
-        calcNhifDed(100000)
+        
     }
+    calcNhifDed()
     //functuion to calculate the nssf deduction
     function calcNssfDed(pensionScheme,maxPensionablePay){
         let maxContributions=0
         if (pensionScheme>1){
-            return "tier2"
+           // return "tier2"
+           maxContributions=maxPensionablePay*0.06
+           return maxContributions
         }
         else{
-            "tier1";
+           // "tier1";
+           maxContributions=maxPensionablePay*0.12
+           return maxContributions
         }
-        if(tier1){
-           maxPensionablePay<=6000
-           maxContributions=maxPensionablePay*0.06
-            }
-            else{
-                console.log(maxPensionablePay>6000 && maxPensionablePay<=18000)
-             maxContributions=maxPensionablePay*0.12
-            return maxContributions
-            }
-            calcNssfDed(1,100000)
+            
         }
+        calcNssfDed()
         
             
             function calcHousingFund(basicSalary){
                 let housingLevy=basicSalary*0.015
                return housingLevy
             }
-            calcHousingFund(100000)
+            calcHousingFund()
         
-         let deductions=interest+nhifDed+payee+maxContributions+housingLevy;
+         let deductions=payee+nhifDed+maxContributions;
          let netSalary=basicSalary-deductions;
          return netSalary;
     
