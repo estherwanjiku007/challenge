@@ -9,11 +9,11 @@ function speedDetector(speed){
     if (speed<=speedLimit){
         return "OK";
     }
-    else if(speedLimit>speed){
+    else if(speed>speedLimit && diff<=11){
          return diff;
     }
-     if (diff>=12){
+       else //if (diff>=12){
         return "License Suspended.";
+   // }
     }
-    }
-    speedDetector()
+   speedDetector()
