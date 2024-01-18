@@ -1,5 +1,14 @@
 //function to calculate the netsalary
-
+function calcNetSalary(basicSalary){
+     calcNhifDed(100000)
+     calcNssfDed()
+     calcNhifDed()
+     calcHousingFund()
+let deductions=payee+nhifDed+maxContributions+housingLevy;
+let netSalary=basicSalary-deductions;
+return netSalary;
+}
+calcNetSalary()
     //function to calculate the Payee
     function calcPayee(basicSalary){
         let payee;
@@ -102,7 +111,7 @@
     //functuion to calculate the nssf deduction
     function calcNssfDed(pensionScheme,maxPensionablePay){
         let maxContributions=0
-        if (pensionScheme>1){
+        if (pensionScheme<2){
            // return "tier2"
            maxContributions=maxPensionablePay*0.06
           // return maxContributions
@@ -122,14 +131,4 @@
                return housingLevy
             }
             calcHousingFund()
-            function calcNetSalary(basicSalary){
-               calcNhifDed()
-               calcNssfDed()
-               calcNhifDed()
-               calcHousingFund()
-         let deductions=payee+nhifDed+maxContributions+housingLevy;
-         let netSalary=basicSalary-deductions;
-         return netSalary;
-    
-    }
-        calcNetSalary()
+            
