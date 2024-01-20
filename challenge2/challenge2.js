@@ -1,6 +1,5 @@
 function speedDetector(speed){
     //initializing the value of speed
-
     //initializing the speed limit
     const speedLimit=70;
     //intializing our points as diff
